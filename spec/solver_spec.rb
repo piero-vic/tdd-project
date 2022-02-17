@@ -17,7 +17,15 @@ describe Solver do
     context 'any other integer as argument' do
       it 'should return the factorial of the integer' do
         expect(solver.factorial(5)).to eql 120
-        expect(solver.factorial(10)).to eql 3628800
+        expect(solver.factorial(10)).to eql 3_628_800
+      end
+    end
+  end
+
+  describe '#reverse' do
+    context 'for a word' do
+      it 'Should return a reversed string' do
+        expect(solver.reverse('hello')).to eql 'olleh'
       end
     end
   end
