@@ -32,7 +32,7 @@ describe Solver do
   describe '#fizzbuzz' do
     context 'When input is divisible by 3' do
       it 'should return fizz' do
-        expect(fizzbuzz(3)).to eq 'fizz'
+        expect(solver.fizzbuzz(3)).to eq 'fizz'
       end
     end
   end
