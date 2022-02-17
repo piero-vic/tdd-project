@@ -45,6 +45,10 @@ describe Solver do
         expect(solver.fizzbuzz(30)).to eq 'fizzbuzz'
       end
     end
+    context 'When input is not divisible by both 3 or 5' do
+      it 'should return the number' do
+        expect(solver.fizzbuzz(7)).to eq '7'
+      end
+    end
   end
-
 end
