@@ -35,6 +35,11 @@ describe Solver do
         expect(solver.fizzbuzz(3)).to eq 'fizz'
       end
     end
+    context 'When input is divisible by 5' do
+      it 'should return buzz' do
+        expect(solver.fizzbuzz(25)).to eq 'buzz'
+      end
+    end
   end
 
 end
