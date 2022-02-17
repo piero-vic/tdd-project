@@ -23,10 +23,9 @@ describe Solver do
   end
 
   describe '#reverse' do
-    context 'for a word' do
-      it 'Should return a reversed string' do
-        expect(solver.reverse('hello')).to eql 'olleh'
-      end
+    it 'Should return a reversed string' do
+      expect(solver.reverse('hello')).to eql 'olleh'
+      expect(solver.reverse('hello world')).to eql 'dlrow olleh'
     end
   end
 end
