@@ -40,6 +40,11 @@ describe Solver do
         expect(solver.fizzbuzz(25)).to eq 'buzz'
       end
     end
+    context 'When input is divisible by both 3 and 5' do
+      it 'should return fizzbuzz' do
+        expect(solver.fizzbuzz(30)).to eq 'fizzbuzz'
+      end
+    end
   end
 
 end
