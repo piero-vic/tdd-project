@@ -15,6 +15,9 @@ In order to run locally this project type the following commands over the termin
 - git clone https://github.com/piero-vic/tdd-project
 - cd tdd-project
 
+## Test
+To run the tests, make sure you install RSpec by running this command **gem install rspec** and after installation, run **rspec spec/solver_spec.rb ** to see all the test passing.
+
 
 ## Authors
 
