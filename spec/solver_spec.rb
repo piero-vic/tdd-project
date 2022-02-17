@@ -28,4 +28,13 @@ describe Solver do
       expect(solver.reverse('hello world')).to eql 'dlrow olleh'
     end
   end
+
+  describe '#fizzbuzz' do
+    context 'When input is divisible by 3' do
+      it 'should return fizz' do
+        expect(fizzbuzz(3)).to eq 'fizz'
+      end
+    end
+  end
+
 end
